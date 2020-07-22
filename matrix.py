@@ -162,7 +162,8 @@ while True:
                         a[i][j] = x
                 det = np.linalg.det(a)
                 det = round(det)
-                if det == '0':
+                if det == 0:
+                    print()
                     print('Sorry, adjoint does not exist for this matrix')
                 else:
                     inv = np.linalg.inv(a) * np.linalg.det(a)
